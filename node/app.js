@@ -12,7 +12,12 @@
 
 const 
   bodyParser = require('body-parser'),
-  config = require('config'),
+  config = {
+    "appSecret": "",
+    "pageAccessToken": "",
+    "validationToken": "",
+    "serverURL": ""
+  },
   crypto = require('crypto'),
   express = require('express'),
   https = require('https'),  
